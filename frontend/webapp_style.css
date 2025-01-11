@@ -1,0 +1,224 @@
+/* Jakub Rozkosz */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1, .register-container h2 {
+    text-align: center;
+    color: #333333;
+}
+
+.OkStatus-Wt-WText {
+    display: block;
+    margin-bottom: 10px;
+    color: #0b8b20;
+}
+
+.NotOkStatus-Wt-WText {
+    display: block;
+    margin-bottom: 10px;
+    color: #c50e0e;
+}
+
+.register-container .Info-Wt-WText {
+    display: block;
+    margin-bottom: 10px;
+    color: #2c2828;
+}
+
+.register-container .Wt-WLineEdit {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-container .Wt-WPushButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container .Wt-WPushButton:hover {
+    background-color: #0056b3;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.centered-image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.login-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container .Wt-WPushButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.login-container .Wt-WLineEdit {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.Wt-WPushButton:hover {
+    background-color: #0056b3;
+}
+
+.admin-panel {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 20px;
+}
+
+.admin-panel h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-panel .Wt-WLineEdit {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.admin-panel .admin-table {
+    width: 100%;
+    max-width: 100%;
+    width: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    /* border-collapse: collapse; */
+}
+
+.admin-panel .admin-table th,
+.admin-panel .admin-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.admin-panel .admin-table th {
+    background-color: #f2f2f2;
+}
+
+.admin-panel .admin-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.admin-panel .admin-table tr:hover {
+    background-color: #ddd;
+}
+
+.admin-panel .Wt-WPushButton {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-panel .Wt-WPushButton:hover {
+    background-color: #0056b3;
+}
+
+.custom-message-box {
+    width: 400px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #a1d9e7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-message-box-contents {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.custom-message-box-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-message-box-footer {
+    text-align: center;
+    padding-top: 10px;
+}

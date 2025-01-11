@@ -1,0 +1,32 @@
+// Jakub Rozkosz
+
+Wymagane biblioteki i narzędzia:
+* boost
+    instalacja: sudo apt-get install libboost-all-dev
+* cmake
+    instalacja: sudo apt-get install cmake
+* Wt  // do tworzenia aplikacji webowej
+    instalacja: poprzez skrypt "wt_installation.sh", który instaluje bibliotekę lokalnie wewnątrz katalogu, 
+                w którym uruchamiany jest skrypt (/install/wt_install/)
+* sqlite3
+    instalacja: sudo apt install sqlite3 libsqlite3-dev
+
+Aby system wiedział, gdzie ma lokalizowac biblioteki dynamiczne z Wt, należy ustawić zmienną środowiskową:
+    * w katalogu projektu uruchamiamy komendę:
+        export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/install/wt_install/lib/
+        (komendą 'echo $LD_LIBRARY_PATH' możemy potwierdzić ustawienie zmiennej)
+
+Instrukcja budowania i uruchamiania aplikacji:
+1. W katalogu z plikami źródłowymi wykonać następujące komendy:
+    mkdir build
+    cd build/
+    cmake ..
+    cmake --build .
+
+2. W katalogu /build powstaną pliki wykonywalne: tcpserver, tcpclient oraz webapp oraz testowe: 
+    Wykonanie tcpserver: ./TCPServer
+    Wykonanie tcpclient: ./TCPClient
+    Wykonanie webapp: ./Webapp --http-listen 0.0.0.0:8080 --docroot .
+
+3. Aby uruchomić testy należy w katalogu /build wpisać komendę: ctest
+
